@@ -1,0 +1,37 @@
+¿Por qué un lenguaje de programación sólo puede utilizarse en algunos sistemas operativos y en otros no?
+R// La compatibilidad de un lenguaje de programación con un sistema operativo depende de varios factores 
+
+-	Dependencia del compilador: Cada lenguaje de programación tiene su propio compilador, que traduce el código escrito en ese lenguaje a un lenguaje de bajo nivel que el sistema operativo puede entender 
+Si no existe un compilador para un determinado sistema operativo, no será posible programar en ese lenguaje en ese sistema operativo.
+
+-	Dependencia de las bibliotecas: Muchos lenguajes de programación utilizan bibliotecas de funciones específicas del sistema operativo para realizar ciertas tareas, como la gestión de archivos o la interfaz de usuario. 
+Si estas bibliotecas no están disponibles en un sistema operativo determinado, el lenguaje de programación no podrá utilizarse en ese sistema.
+
+-	Diferencias en la arquitectura: Algunos lenguajes de programación están diseñados específicamente para funcionar en ciertas arquitecturas de hardware.
+Si un sistema operativo no es compatible con la arquitectura para la cual se diseñó un lenguaje de programación, no será posible utilizar ese lenguaje en ese sistema operativo.
+
+-	Decisiones de diseño: En algunos casos, la compatibilidad de un lenguaje de programación con un sistema operativo específico puede ser una decisión de diseño deliberada. 
+Los creadores del lenguaje pueden haber decidido enfocarse en un sistema operativo en particular o pueden haber implementado características específicas que solo son compatibles con ciertos sistemas operativos.
+
+Es importante tener en cuenta que muchos lenguajes de programación son multiplataforma, lo que significa que pueden utilizarse en diferentes sistemas operativos. Sin embargo, la compatibilidad de un lenguaje de programación con un sistema operativo específico puede variar y depender de los factores mencionados anteriormente 
+ 
+¿Qué tipo de máquina virtual soporta virtualBox?. 
+R// VirtualBox soporta máquinas virtuales de tipo x86/amd64.
+Esto significa que VirtualBox puede crear y ejecutar máquinas virtuales en sistemas operativos como Windows, Linux, FreeBSD y macOS. 
+Es un hipervisor de tipo 2 , lo que significa que se ejecuta sobre un sistema operativo anfitrión y permite la virtualización de otros sistemas operativos dentro de él 
+
+¿Qué función cumple el hypervisor en la virtualización?
+R// Un hipervisor, también conocido como supervisor de máquina virtual (VMM), es un software que crea y ejecuta máquinas virtuales . 
+Su función principal en la virtualización es abstraer y aislar las máquinas virtuales y sus programas del hardware del servidor subyacente . 
+Esto permite un uso más eficiente de los recursos , ya que cada máquina virtual puede ejecutar su propio sistema operativo y aplicaciones de forma independiente. 
+Además, el hipervisor garantiza la seguridad y el aislamiento entre las diferentes máquinas virtuales, evitando que los sistemas huéspedes accedan a los archivos o recursos del resto de sistemas . 
+En resumen, el hipervisor juega un papel fundamental en la virtualización al permitir la creación y gestión de múltiples máquinas virtuales en un único servidor físico.
+
+Si tengo más de una máquina virtual instalada, y una se rompe, ¿esto afecta a las demás? ¿por qué?
+R// Cuando se utilizan máquinas virtuales, cada una funciona de forma aislada y no afecta directamente a las demás. 
+Si una máquina virtual se rompe o deja de funcionar, esto no debería afectar a las demás máquinas virtuales que estén en ejecución.
+
+Las máquinas virtuales funcionan como entornos virtuales independientes dentro de un único sistema físico. 
+Cada máquina virtual tiene su propio sistema operativo, aplicaciones y recursos asignados. 
+Están diseñadas para ser independientes y no interactuar directamente entre sí.
+
